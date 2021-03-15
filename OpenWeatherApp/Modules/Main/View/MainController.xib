@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashController" customModule="OpenWeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="lblInfo" destination="jdx-dX-7UL" id="iA4-k8-O7A"/>
+                <outlet property="tableView" destination="DQF-BN-QRD" id="eLl-rY-i7x"/>
+                <outlet property="view" destination="iN0-l3-epB" id="PEm-cA-Eu7"/>
+                <outlet property="viewInfo" destination="NFT-Tv-N7v" id="QHV-MI-ot4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SplashController" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bRm-UO-gvQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFT-Tv-N7v">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdx-dX-7UL">
+                                    <rect key="frame" x="15" y="15" width="384" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="jdx-dX-7UL" secondAttribute="trailing" constant="15" id="NHZ-Pc-Jv4"/>
+                                <constraint firstItem="jdx-dX-7UL" firstAttribute="leading" secondItem="NFT-Tv-N7v" secondAttribute="leading" constant="15" id="es8-F2-Crs"/>
+                                <constraint firstAttribute="bottom" secondItem="jdx-dX-7UL" secondAttribute="bottom" constant="15" id="pML-nf-DrC"/>
+                                <constraint firstItem="jdx-dX-7UL" firstAttribute="top" secondItem="NFT-Tv-N7v" secondAttribute="top" constant="15" id="umo-4r-uL0"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DQF-BN-QRD">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRm-UO-gvQ" secondAttribute="trailing" id="DMZ-2e-MS6"/>
+                <constraint firstItem="bRm-UO-gvQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EXG-zd-CaE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="bRm-UO-gvQ" secondAttribute="top" id="EZU-3a-j5J"/>
+                <constraint firstItem="bRm-UO-gvQ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bzU-Uz-IPw"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

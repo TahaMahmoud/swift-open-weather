@@ -1,0 +1,23 @@
+/*
+  Localizable.strings
+  OpenWeatherApp
+ 
+  Created by Mohamed Elbana on 3/15/21.
+  Copyright © 2021 Mohamed Elbana. All rights reserved.
+*/
+
+// MARK: MAIN
+
+"app_name" = "OpenWeather";
+"ok" = "OK";
+"cancel" = "Cancel";
+"no_internet_connection" = "No internet connection!";
+"something_went_worng" = "Something went worng!";
+"server_error" = "Server error!";
+"no_response_found" = "No response found!";
+"parsing_error" = "Parsing error!";
+"enter_city_name" = "Enter city name";
+"accurate_data" = "Accurate data!";
+"not_accurate_data" = "Not accurate data";
+"due_to" = "due to";
+"retry" = "Retry";
